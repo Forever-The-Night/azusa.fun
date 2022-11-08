@@ -1,0 +1,175 @@
+.parent {
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    overflow: hidden;
+    position: absolute;
+    -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  }
+
+  svg {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+  }
+
+  circle {
+    stroke: #ffffff;
+    fill: none;
+    transition: 0.3s;
+  }
+
+  #svg1 circle {
+    transition-timing-function: linear;
+  }
+
+  #svg2 circle {
+    transition-timing-function: linear;
+  }
+
+  .circle1 {
+    transition-delay: 0.05s;
+  }
+
+  .circle2 {
+    transition-delay: 0.1s;
+  }
+
+  .circle3 {
+    transition-delay: 0.15s;
+  }
+
+  .circle4 {
+    transition-delay: 0.2s;
+  }
+
+  .circle5 {
+    transition-delay: 0.25s;
+  }
+
+  .circle6 {
+    transition-delay: 0.3s;
+  }
+
+  .circle7 {
+    transition-delay: 0.35s;
+  }
+
+  .circle8 {
+    transition-delay: 0.4s;
+  }
+
+  .circle9 {
+    transition-delay: 0.45s;
+  }
+
+  .circle10 {
+    transition-delay: 0.05s;
+  }
+
+  .circle11 {
+    transition-delay: 0.1s;
+  }
+
+  .circle12 {
+    transition-delay: 0.15s;
+  }
+
+  .circle13 {
+    transition-delay: 0.2s;
+  }
+
+  .circle14 {
+    transition-delay: 0.25s;
+  }
+
+  .circle15 {
+    transition-delay: 0.3s;
+  }
+
+  .circle16 {
+    transition-delay: 0.35s;
+  }
+
+  .circle17 {
+    transition-delay: 0.4s;
+  }
+
+  .circle18 {
+    transition-delay: 0.45s;
+  }
+
+  .slider {
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    display: inline-flex;
+    overflow: hidden;
+  }
+
+  .slide1 {
+    left: -5px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    z-index: 10;
+    transition: 1.4s;
+    display: inline-block;
+  }
+
+  .slide2,
+  .slide4 {
+    left: -5px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    z-index: 100;
+    transition: 1.4s;
+    display: none;
+  }
+  .slide3 {
+    left: -5px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    z-index: 100;
+    transition: 1.4s;
+    display: none;
+  }
+  .up2 {
+    z-index: 400;
+  }
+
+  .steap {
+    stroke-width: 0;
+  }
+
+  .streak {
+    opacity: 1;
+    stroke-width: 40vh;
+  }
+
+  @media (max-width: 700px) {
+    .parent {
+      margin-left: 1%;
+    }
+  }

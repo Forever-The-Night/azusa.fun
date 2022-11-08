@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azusa的小站</title>
+    <link rel="stylesheet" href="./css/back.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/img.css">
+    <link rel="stylesheet" href="./css/temp.css">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="bookmark" href="./favicon.ico" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+    <style>
+        canvas {
+            pointer-events: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+
+        canvas.flare {
+            opacity: 0.5;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("canvas.snow").let_it_snow({
+                windPower: 3,
+                speed: 1,
+                count: 250,
+                size: 0,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <canvas width="100%" height="100%" class="snow"></canvas>
+    <div class='parent' id="body">
+        <div class='slider'>
+            <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <mask id="Mask1">
+                        <circle id='circle1' class='circle1 steap' cx="70%" cy="49%" r="60" />
+                        <circle id='circle2' class='circle2 steap' cx="70%" cy="49%" r="300" />
+                        <circle id='circle3' class='circle3 steap' cx="70%" cy="49%" r="540" />
+                        <circle id='circle4' class='circle4 steap' cx="70%" cy="49%" r="780" />
+                        <circle id='circle5' class='circle5 steap' cx="70%" cy="49%" r="1020" />
+                        <circle id='circle6' class='circle6 steap' cx="70%" cy="49%" r="1260" />
+                        <circle id='circle7' class='circle7 steap' cx="70%" cy="49%" r="1500" />
+                        <circle id='circle8' class='circle8 steap' cx="70%" cy="49%" r="1740" />
+                        <circle id='circle9' class='circle9 steap' cx="70%" cy="49%" r="1980" />
+                    </mask>
+                </defs>
+                <rect width="100%" height="100%" style="fill:rgb(180, 184, 253)" mask="url(#Mask1)" />
+                <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#Mask1)">
+                    <div class="back">
+                        <span class="fill">太破费了吧 红豆泥阿里嘎多 蟹蟹你啊 小黑梓赫赫了 爷不想唱 又搁这造谣呢 主播能给自己两拳吗 我是愣呐 拿个快递家愣们 歪歪歪 就不说510晚安
+                            要说阿梓我爱你 阿梓么么么 嗦话！
+                            打卡 主播能讲一句立语听听吗 陪一根 小孩梓不太友善啊 510晚安 嘴硬 梓公主来了 梓神的含金量 阿梓怎么空手来啊
+                        </span>
+                        <span class="outline" aria-hidden="true">太破费了吧 红豆泥阿里嘎多 蟹蟹你啊 小黑梓赫赫了 爷不想唱 又搁这造谣呢 主播能给自己两拳吗 我是愣呐
+                            拿个快递家愣们 歪歪歪
+                            就不说510晚安 要说阿梓我爱你 阿梓么么么 嗦话！
+                            打卡 主播能讲一句立语听听吗 陪一根 小孩梓不太友善啊 510晚安 嘴硬 梓公主来了 梓神的含金量 阿梓怎么空手来啊
+                        </span>
+                    </div>
+                </foreignObject>
+            </svg>
+            <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <mask id="Mask2">
+                        <circle id='circle10' class='circle10 steap' cx="70%" cy="49%" r="60" />
+                        <circle id='circle11' class='circle11 steap' cx="70%" cy="49%" r="300" />
+                        <circle id='circle12' class='circle12 steap' cx="70%" cy="49%" r="540" />
+                        <circle id='circle13' class='circle13 steap' cx="70%" cy="49%" r="780" />
+                        <circle id='circle14' class='circle14 steap' cx="70%" cy="49%" r="1020" />
+                        <circle id='circle15' class='circle15 steap' cx="70%" cy="49%" r="1260" />
+                        <circle id='circle16' class='circle16 steap' cx="70%" cy="49%" r="1500" />
+                        <circle id='circle17' class='circle17 steap' cx="70%" cy="49%" r="1740" />
+                        <circle id='circle18' class='circle18 steap' cx="70%" cy="49%" r="1980" />
+                    </mask>
+                </defs>
+                <rect width="100%" height="100%" style="fill:rgb(180, 184, 253)" mask="url(#Mask2)" />
+                <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#Mask2)">
+                    <div class="back">
+                        <span class="fill">太破费了吧 红豆泥阿里嘎多 蟹蟹你啊 小黑梓赫赫了 爷不想唱 又搁这造谣呢 主播能给自己两拳吗 我是愣呐 拿个快递家愣们 歪歪歪 就不说510晚安
+                            要说阿梓我爱你 阿梓么么么 嗦话！
+                            打卡 主播能讲一句立语听听吗 陪一根 小孩梓不太友善啊 510晚安 嘴硬 梓公主来了 梓神的含金量 阿梓怎么空手来啊
+                        </span>
+                        <span class="outline" aria-hidden="true">太破费了吧 红豆泥阿里嘎多 蟹蟹你啊 小黑梓赫赫了 爷不想唱 又搁这造谣呢 主播能给自己两拳吗 我是愣呐
+                            拿个快递家愣们 歪歪歪
+                            就不说510晚安 要说阿梓我爱你 阿梓么么么 嗦话！
+                            打卡 主播能讲一句立语听听吗 陪一根 小孩梓不太友善啊 510晚安 嘴硬 梓公主来了 梓神的含金量 阿梓怎么空手来啊
+                        </span>
+                    </div>
+                </foreignObject>
+            </svg>
+
+            <div id='slide1' class='slide1 up1'>
+                <div class="disappear">
+                    <span>A</span> <span>Z</span> <span>U</span> <span>S</span> <span>A</span>
+                </div>
+                <div class="lite">
+                    <div style="font-size: 5vh;">阿梓从小就很可爱</div>
+                    <div>非官方应援站</div>
+                    <div style="color: rgb(170, 170, 170); font-weight: 100;">——————————————</div>
+                    <div style="color: rgb(206, 206, 206); font-size: 3vh;">就不说510晚安，要说<br />
+                        阿梓我爱你~阿梓么么么~</div>
+                    <div>
+                        <ul class="navigation" data-v-06627829="">
+                            <li class="navigation_item" data-v-06627829=""><a href="https://space.bilibili.com/7706705"
+                                    class="blog-button" target="_blank" data-v-06627829="">个人空间</a></li>
+                            <li class="navigation_item" data-v-06627829=""><a href="https://live.bilibili.com/510"
+                                    class="blog-button" target="_blank" data-v-06627829="">直播间</a></li>
+                            <li class="navigation_item" data-v-06627829=""><a
+                                    href="https://zh.moegirl.org.cn/%E9%98%BF%E6%A2%93" class="blog-button"
+                                    target="_blank" data-v-06627829="">萌娘百科</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id='slide2' class='slide2'>
+                <div class="card">
+                    <div class="section text-center">
+                        <input class="pricing" type="checkbox" id="pricing" name="pricing" />
+                        <div class="card-3d-wrap">
+                            <label for="pricing">
+                                <div class="card-3d-wrapper">
+                                    <div class="card-front">
+                                        <div class="pricing-wrap">
+                                            <h4 class="mb-5">关于阿梓</h4>
+                                        
+                                                <table style="font-weight: 900; font-size: 20px; line-height: 30px;font-family: 'kwy',sans-serif;color: #B4B8FD;margin: 0 auto;">
+                                                    <tr>
+                                                        <td>本名</td><td>阿梓(Azusa)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>别号</td><td>梓宝、梓神、阿口<br />
+                                                            梓老师、网友小Z</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>发色</td><td>紫藤色</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>瞳色</td><td>琥珀色</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>身高</td><td>153cm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>年龄</td><td>15(自称)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>生日</td><td>12月20日</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>出身</td><td>虚拟东京/祖籍四川</td>
+                                                    </tr>
+                                                </table>
+                                            <div class="img-wrap img-2">
+                                                <img src="https://assets.codepen.io/1462889/sea.png" alt="">
+                                            </div>
+                                            <div class="img-wrap img-1">
+                                                <img src="./images/l1.gif" alt="">
+                                            </div>
+                                            <div class="img-wrap img-3">
+                                                <img src="./images/r1.png" alt="">
+                                            </div>
+                                            <div class="img-wrap img-6">
+                                                <img src="./images/b2.png" alt="">
+                                            </div>
+                                            <div class="img-wrap img-cg">
+                                                <img src="./images/cg.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="pricing-wrap">
+                                            <h4 class="mb-5">阿梓の自我介绍</h4>
+                                            <p style="font-weight: 900; font-size: 20px; line-height: 30px;font-family: 'kwy',sans-serif;"
+                                                class="mb-4">大家好我是阿梓，<br />
+                                                平时家人们都亲切的称呼我为梓宝！<br />
+                                                今年十五岁，希望认识更多新朋友！<br />
+                                                麦克风blue小奶瓶，声卡babyface，<br />
+                                                擅长唱国语流行女生，<br />
+                                                点歌可以参考我的网易云歌单哦，<br />
+                                                如果戴上我的勋章点歌我会更开心！<br />
+                                                基本不会日文英文其他文和男生的歌<br />
+                                                （有些歌 找不到女生的调）<br />
+                                                背景都是我自己画的φ(๑˃∀˂๑)♪</p>
+                                            <div class="img-wrap img-2">
+                                                <img src="https://assets.codepen.io/1462889/grass.png" alt="">
+                                            </div>
+                                            <div class="img-wrap img-4">
+                                                <img src="./images/l2.png" alt="">
+                                            </div>
+                                            <div class="img-wrap img-5">
+                                                <img src="./images/r2.png" alt="">
+                                            </div>
+                                            <div class="img-wrap img-7">
+                                                <img src="./images/b1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='slide3' class='slide3'>
+                <div><div style="text-align: center;margin-top: 100px;font-size: 5vh;margin-bottom: 30px;">✦代表作品✦</div></div>
+                
+                <div class="photo" id="photo">
+                    <a href="https://www.bilibili.com/video/BV1WX4y1P72y" target="_blank" id="t1" class="tiler">
+                        <img src="images/a1.jpg">
+                        <div class="tiler-overlay splitting-image" data-image="images/a1.jpg"
+                            style="background-image: url(&quot;images/a1.png&quot;); --row-total:3; --col-total:3; --cell-total:9;">
+                            <span class="split-cell" data-row="0" data-col="0"
+                                style="--row-index:0; --col-index:0; --cell-index:0;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="1" style="--row-index:0; --col-index:1; --cell-index:1;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="2" style="--row-index:0; --col-index:2; --cell-index:2;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="0" style="--row-index:1; --col-index:0; --cell-index:3;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="1" style="--row-index:1; --col-index:1; --cell-index:4;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="2" style="--row-index:1; --col-index:2; --cell-index:5;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="0" style="--row-index:2; --col-index:0; --cell-index:6;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="1" style="--row-index:2; --col-index:1; --cell-index:7;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="2" style="--row-index:2; --col-index:2; --cell-index:8;"><span
+                                    class="split-cell__inner"></span></span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.bilibili.com/video/BV1ZL4y1n7TU" target="_blank" id="t2" class="tiler">
+                        <img src="images/a2.jpg">
+                        <div class="tiler-overlay splitting-image" data-image="images/a2.jpg"
+                            style="background-image: url(&quot;images/a2.png&quot;); --row-total:3; --col-total:3; --cell-total:9;">
+                            <span class="split-cell" data-row="0" data-col="0"
+                                style="--row-index:0; --col-index:0; --cell-index:0;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="1" style="--row-index:0; --col-index:1; --cell-index:1;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="2" style="--row-index:0; --col-index:2; --cell-index:2;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="0" style="--row-index:1; --col-index:0; --cell-index:3;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="1" style="--row-index:1; --col-index:1; --cell-index:4;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="2" style="--row-index:1; --col-index:2; --cell-index:5;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="0" style="--row-index:2; --col-index:0; --cell-index:6;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="1" style="--row-index:2; --col-index:1; --cell-index:7;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="2" style="--row-index:2; --col-index:2; --cell-index:8;"><span
+                                    class="split-cell__inner"></span></span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.bilibili.com/video/BV1q54y1q73j" target="_blank" id="t3" class="tiler">
+                        <img src="images/a3.jpg">
+                        <div class="tiler-overlay splitting-image" data-image="images/a3.jpg"
+                            style="background-image: url(&quot;images/a3.png&quot;); --row-total:3; --col-total:3; --cell-total:9;">
+                            <span class="split-cell" data-row="0" data-col="0"
+                                style="--row-index:0; --col-index:0; --cell-index:0;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="1" style="--row-index:0; --col-index:1; --cell-index:1;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="2" style="--row-index:0; --col-index:2; --cell-index:2;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="0" style="--row-index:1; --col-index:0; --cell-index:3;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="1" style="--row-index:1; --col-index:1; --cell-index:4;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="2" style="--row-index:1; --col-index:2; --cell-index:5;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="0" style="--row-index:2; --col-index:0; --cell-index:6;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="1" style="--row-index:2; --col-index:1; --cell-index:7;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="2" style="--row-index:2; --col-index:2; --cell-index:8;"><span
+                                    class="split-cell__inner"></span></span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.bilibili.com/video/BV1dg411w7uv" target="_blank" id="t4" class="tiler">
+                        <img src="images/a4.jpg">
+                        <div class="tiler-overlay splitting-image" data-image="images/a4.jpg"
+                            style="background-image: url(&quot;images/a4.png&quot;); --row-total:3; --col-total:3; --cell-total:9;">
+                            <span class="split-cell" data-row="0" data-col="0"
+                                style="--row-index:0; --col-index:0; --cell-index:0;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="1" style="--row-index:0; --col-index:1; --cell-index:1;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="2" style="--row-index:0; --col-index:2; --cell-index:2;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="0" style="--row-index:1; --col-index:0; --cell-index:3;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="1" style="--row-index:1; --col-index:1; --cell-index:4;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="2" style="--row-index:1; --col-index:2; --cell-index:5;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="0" style="--row-index:2; --col-index:0; --cell-index:6;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="1" style="--row-index:2; --col-index:1; --cell-index:7;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="2" style="--row-index:2; --col-index:2; --cell-index:8;"><span
+                                    class="split-cell__inner"></span></span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.bilibili.com/video/BV16A411W7dv" target="_blank" id="t5" class="tiler">
+                        <img src="images/a5.jpg">
+                        <div class="tiler-overlay splitting-image" data-image="images/a5.jpg"
+                            style="background-image: url(&quot;images/a5.png&quot;); --row-total:3; --col-total:3; --cell-total:9;">
+                            <span class="split-cell" data-row="0" data-col="0"
+                                style="--row-index:0; --col-index:0; --cell-index:0;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="1" style="--row-index:0; --col-index:1; --cell-index:1;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="2" style="--row-index:0; --col-index:2; --cell-index:2;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="0" style="--row-index:1; --col-index:0; --cell-index:3;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="1" style="--row-index:1; --col-index:1; --cell-index:4;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="2" style="--row-index:1; --col-index:2; --cell-index:5;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="0" style="--row-index:2; --col-index:0; --cell-index:6;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="1" style="--row-index:2; --col-index:1; --cell-index:7;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="2" style="--row-index:2; --col-index:2; --cell-index:8;"><span
+                                    class="split-cell__inner"></span></span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.bilibili.com/video/BV1na411k7iT" target="_blank" id="t6" class="tiler">
+                        <img src="images/a6.jpg">
+                        <div class="tiler-overlay splitting-image" data-image="images/a6.jpg"
+                            style="background-image: url(&quot;images/a6.png&quot;); --row-total:3; --col-total:3; --cell-total:9;">
+                            <span class="split-cell" data-row="0" data-col="0"
+                                style="--row-index:0; --col-index:0; --cell-index:0;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="1" style="--row-index:0; --col-index:1; --cell-index:1;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="0"
+                                data-col="2" style="--row-index:0; --col-index:2; --cell-index:2;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="0" style="--row-index:1; --col-index:0; --cell-index:3;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="1" style="--row-index:1; --col-index:1; --cell-index:4;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="1"
+                                data-col="2" style="--row-index:1; --col-index:2; --cell-index:5;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="0" style="--row-index:2; --col-index:0; --cell-index:6;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="1" style="--row-index:2; --col-index:1; --cell-index:7;"><span
+                                    class="split-cell__inner"></span></span><span class="split-cell" data-row="2"
+                                data-col="2" style="--row-index:2; --col-index:2; --cell-index:8;"><span
+                                    class="split-cell__inner"></span></span>
+                        </div>
+                    </a>
+                </div>
+
+                <script>
+                    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+                        for (i = 1; i <= 6; i++) {
+                            document.getElementById('t' + i).style.width = "50%";
+                            
+                        }
+                    }
+                    if (document.documentElement.clientWidth > document.documentElement.clientHeight) {
+                        for (i = 1; i <= 6; i++) {
+                            document.getElementById('t' + i).style.width = "33.3%";
+                            
+                        }
+                    };
+                </script>
+            </div>
+            <div id='slide4' class='slide4'>建设中。。。。</div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        const circle = document.getElementById("circle");
+        document.addEventListener("mousemove", (e) => {
+            let mouse_x = e.clientX;
+            let mouse_y = e.clientY;
+            circle.style.left = `${mouse_x - 100}px`;
+            circle.style.top = `${mouse_y - 100}px`;
+        });
+    </script>
+    <script src="./js/temp.js"></script>
+    <script src="./js/img.js"></script>
+</body>
+
+</html>
